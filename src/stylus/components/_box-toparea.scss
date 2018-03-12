@@ -2,11 +2,9 @@
   position: relative;
   .titleimg {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 0px;
     width: 100%;
-    transform: translateY(-50%);
+    z-index: -1;
+    padding: 160px 0 0;
     img {
       width: 80%;
       display: block;

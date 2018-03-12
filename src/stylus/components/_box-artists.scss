@@ -10,7 +10,7 @@
           position: relative;
           margin: 13px 0 0;
           display: block;
-          background: rgba(255,255,255,.7);
+          background: rgba(#79abcc, .7);
           .thumb {
             top: 0;
             left: 0;
@@ -75,8 +75,8 @@
                 font-size: 14px;
                 line-height: 20px;
                 &.fsmall {
-                  font-size: 12px;
-                  line-height: 18px;
+                  font-size: 10px;
+                  line-height: 16px;
                 }
               }
             }
