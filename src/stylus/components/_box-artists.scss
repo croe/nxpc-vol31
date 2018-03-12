@@ -1,0 +1,88 @@
+.box-artists {
+  .inner {
+    box-sizing: border-box;
+    .list {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          position: relative;
+          margin: 13px 0 0;
+          display: block;
+          background: rgba(255,255,255,.7);
+          .thumb {
+            top: 0;
+            left: 0;
+            width: 100%;
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+          .profile {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            h3 {
+              font-size: 14px;
+              line-height: 1em;
+              margin: 0;
+              padding: 0;
+            }
+            p {
+              font-size: 12px;
+              line-height: 14px;
+              &.fsmall {
+                font-size: 10px;
+                line-height: 12px;
+              }
+            }
+            a {
+              color: $color-text-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include min-screen($breakpoint-sm) {
+  .box-artists {
+    .inner {
+      .list {
+        ul {
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 13px 0 0;
+            height: 200px;
+            .thumb {
+              position: relative;
+              width: 200px;
+              height: 200px;
+            }
+            .profile {
+              width: 690px;
+              height: 200px;
+              padding: 20px;
+              h3 {
+                font-size: 30px;
+              }
+              p {
+                font-size: 14px;
+                line-height: 20px;
+                &.fsmall {
+                  font-size: 12px;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

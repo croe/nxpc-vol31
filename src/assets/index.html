@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="ja">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <meta name="description" content="NxPC.Live vol.27 @CIRCUS TOKYO 2017.03.11 (Sat) 21:30–29:00">
+  <meta name="keywords" content="NxPC.Lab, IAMAS, 20th, 情報科学大学院大学, CIRCUS TOKYO">
+  <meta property="og:title" content="NxPC.Live vol.27">
+  <meta property="og:description" content="NxPC.Live vol.27 @CIRCUS TOKYO 2017.03.11 (Sat) 21:30–29:00">
+  <meta property="og:url" content="http://nxpclab.info/vol.27/">
+  <meta property="og:image" content="http://nxpclab.info/vol.27/images/ogp.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="http://nxpclab.info/vol.27/">
+  <meta name="twitter:creator" content="@croe_c">
+  <meta name="twitter:title" content="NxPC.Live vol.27">
+  <meta name="twitter:description" content="NxPC.Live vol.27 @CIRCUS TOKYO 2017.03.11 (Sat) 21:30–29:00">
+  <meta name="twitter:image" content="http://nxpclab.info/vol.27/images/ogp.png">
+  <title>NxPC.Live vol.27</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bundle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHvQh0d4IL5-PCpTF5eiAi-8pKtgQ2jOA"
+          type="text/javascript"></script>
+  <script src="bundle.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="logo"><a href="http://nxpclab.info/" target="_blank"><img src="./images/logo.png" alt="NxPC.Lab"></a></div>
+  <div class="logo_20th">
+    <a href="http://www.iamas.ac.jp/20th/" target="_blank">
+      <img src="./images/logo_iamas20.png" alt="iamas 20th">
+    </a>
+  </div>
+  <nav class="navi">
+    <ul class="horlist">
+      <li class="horlist__item"><a href="#1">Info</a></li>
+      <li class="horlist__item"><a href="#2">Timetable</a></li>
+      <li class="horlist__item"><a href="#3">Artists</a></li>
+      <li class="horlist__item"><a href="#4">System</a></li>
+    </ul>
+  </nav>
+</header><!-- /header -->
+<main id="0" class="main">
+  <div id="gl-scene"></div>
+  <section class="container box-toparea" id="toparea">
+    <div class="titleimg">
+      <img src="./images/title.svg">
+    </div>
+  </section>
+  <section id="1" class="container box-info">
+    <div class="inner">
+      <h2>Info</h2>
+      <div class="content">
+        <h3>NxPC.Lab</h3>
+        <p>IAMAS 20周年記念イベントに関連して、NxPC.Liveをスペシャルエディションで開催。メインゲストにAOKI Takamasa、真鍋大度を迎え、その他IAMAS卒業生を中心に豪華出演者によるDJ、VJ、ライブパフォーマンスをお送りします。</p>
+        <p>NxPC.Labは、クラブやイベントにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発と実践の場としてのイベントNxPC.Liveを実施しています。近年は、クラブのみならず、走行する列車内でイベントを展開するなど、その活動の場を拡大しています。</p>
+        <h3>Ticket</h3>
+        <p><strong>ADV:</strong>&yen; 2,000 [ <a claas="buy" href="http://peatix.com/event/240752" target="_blank">BUY</a> ]</p>
+        <p><strong>DOOR:</strong>&yen; 2,500</p>
+        <h3>Date / Time</h3>
+        <p><strong>Date:</strong>2017.3.11 sat</p>
+        <p><strong>Open:</strong>21:30<strong>Start:</strong>22:00<strong>Close:</strong>29:00</p>
+        <h3>Place</h3>
+        <p><strong>CIRCUS&nbsp;Tokyo</strong></p>
+        <p>〒150-0002 東京都渋谷区渋谷3-26-16 第5叶ビル 1F,B1F<br>
+          TEL:<a href="tel:0364197520">03-6419-7520</a></p>
+        <p>WEB:<a href="http://circus-tokyo.jp/" target="_blank">http://circus-tokyo.jp/</a></p>
+        <h3>Social</h3>
+        <ul class="sociallink">
+          <li class="sociallink__item">
+            <a href="https://www.facebook.com/events/397231663961157/" target="_blank"><img src="./images/btn_fb.svg" /></a>
+          </li>
+          <li class="sociallink__item">
+            <a href="https://twitter.com/nxpclab" target="_blank"><img src="./images/btn_twi.svg" /></a>
+          </li>
+          <li class="sociallink__item">
+            <a href="https://www.youtube.com/channel/UCIo0X6TANJ8pHPtPzVqkGJw" target="_blank"><img src="./images/btn_yt.svg" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="map"></div>
+  </section>
+  <section id="2" class="container box-timetable">
+    <div class="inner">
+      <h2>Timetable</h2>
+      <div class="timetable">
+        <img src="./images/timetable.png">
+      </div>
+    </div>
+  </section>
+  <section id="3" class="container box-artists">
+    <div class="inner">
+      <div class="list">
+        <h2>Sound</h2>
+        <ul>
+          <li>
+            <div class="thumb"><img src="./images/thumb_aoki.png" alt="AOKI Takamasa"></div>
+            <div class="profile">
+              <h3>AOKI Takamasa</h3>
+              <p>1976年大阪府出身。現在は大阪在住。 Born in Osaka, 1976. Presently living in Osaka. RHYTHM + PHOTOGRAPHY
+                <a href="http://www.aokitakamasa.com" target="_blank">http://www.aokitakamasa.com</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_daito.png" alt="Daito Manabe"></div>
+            <div class="profile">
+              <h3>Daito Manabe</h3>
+              <p>身近な現象や素材を異なる目線で捉え直し、組み合わせることで作品を制作。高解像度、高臨場感といったリッチな表現を目指すのでなく、注意深く観察することにより発見できる現象、身体、プログラミング、コンピュータそのものが持つ本質的な面白さに着目している。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_kafuka.png" alt="Kafuka"></div>
+            <div class="profile">
+              <h3>Kafuka</h3>
+              <p class="fsmall">大阪を拠点に活動するビートメーカー。ギターサウンドや自然の音、サンプリング、音響プログラミングなども取りいれ 様々な音をコラージュしオリジナリティあるサウンドを表現。 エレクトロニック・ミュージックを軸に新たな表現や世界観を探究している。2016年に京都の電子音響実験音楽レーベル shrine.jp より多面的な表情が詰まった 音響作品、アルバム「Polyhedron」をリリース。2017年にはドイツ・ベルリンのレーベル Project:Mooncircle 15周年 コンピレー ションに参加。5月に同レーベルよりEP「Laws of Nature」のリリースが決まっている。また、NTT[ICC]でのサウンドインスタレーション作品の展示や、iPhoneアプリなどメディアを 用いた作品を展開する。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_poison.png" alt="POISON"></div>
+            <div class="profile">
+              <h3>POISON</h3>
+              <p>THEY ARE COMING BACK!!!  NxPC.labの初期メンバーとしてフロアを賑やかしていた「Drag Queen × Technology」ユニットが5年振りに再結成！ 愛の技術開発NIGHTをあなたと一緒にxoxo<br>POISON: キャシー(DQ)、マーサ・エストラゴン(DQ)、YOME(VJ)、Motoi Shimizu(Programming)</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_shiratori.png" alt="kei shiratori"></div>
+            <div class="profile">
+              <h3>kei shiratori</h3>
+              <p>東京工科大学メディア学部卒業、国際情報科学芸術アカデミー［IAMAS］DSPコース卒業。2012年「Matilde inc」を設立。心体の拡張をテーマに、先端技術を用いた作品を制作。人とメディアの可能性に注目し、音楽、映像、アプリケーション、プロダクト開発など幅広い分野で活動を行う。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_leico.png" alt="leico"></div>
+            <div class="profile">
+              <h3>leico</h3>
+              <p>
+                <a href="http://leico.github.io" target="_blank">http://leico.github.io</a><br>
+                <a href="https://cycling74.com/author/58260/" target="_blank">https://cycling74.com/author/58260/</a><br>
+                <a href="http://rittor-music.jp/sound/magazine/max/62913" target="_blank">http://rittor-music.jp/sound/magazine/max/62913</a><br>
+                <a href="http://www.maxforlive.com/profile/user/leico" target="_blank">http://www.maxforlive.com/profile/user/leico</a><br>
+                <a href="https://twitter.com/1_0101" target="_blank">twitter:1_0101</a>
+                </p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_reck.png" alt="reckhahn"></div>
+            <div class="profile">
+              <h3>reckhahn</h3>
+              <p>1987年韓国生まれ。大学で彫刻を専攻。情報科学芸術大学院大学(IAMAS)修了後、慶應義塾大学SFC博士課程在学中。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_mikit.png" alt="miki_t"></div>
+            <div class="profile">
+              <h3>miki_t</h3>
+              <p>IAMAS第14期生。<br>
+                <a href="http://mikingt.net/" target="_blank">http://mikingt.net/</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_okubo.png" alt="大久保雅基"></div>
+            <div class="profile">
+              <h3>大久保雅基</h3>
+              <p>1988年宮城県仙台市出身。洗足学園音楽大学音楽・音響デザインコース卒業、情報科学芸術大学院大学メディア表現研究科修士課程修了。電子音楽の作曲家。テクノロジーと人の関係性によって生まれる音楽を探求している。CCMC2010にてACSM116賞受賞。Musica Viva Festival 2010/2013、MUSLAB2015、ISEA2015、第22回学生CGコンテスト等に入選。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_quintet.png" alt="dropcontrol/QUINTET"></div>
+            <div class="profile">
+              <h3>dropcontrol/QUINTET</h3>
+              <p>大和比呂志(ギタリスト、テナーサックス奏者、音楽家。現在IAMASに在学。三輪眞弘に師事しポリ/クロスリズムに着目した研究を進めている)主催のex-Jazzバンド。今回はfeat. ベース永松歩、ドラムよしじまともひと、テナーサックス塙健介、アルトサックス津上研太を迎えてクインテットで編成。<br>
+                <a href="http://www.dropcontrol.com/" target="_blank">http://www.dropcontrol.com/</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_yuzawa.png" alt="Taiki YUZAWA"></div>
+            <div class="profile">
+              <h3>Taiki YUZAWA</h3>
+              <p>Play Electronica Music.</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_sanokazuya.png" alt="さのかずや"></div>
+            <div class="profile">
+              <h3>さのかずや</h3>
+              <p>ちょうど20周年の卒業生として、キラキラな諸先輩方の前座を務めさせて頂きます。目指せ信長、時代の勇者。40周年に呼ばれるように頑張っていきたい。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_oshima.png" alt="おおしまたくろう"></div>
+            <div class="profile">
+              <h3>おおしまたくろう</h3>
+              <p>「PLAY（遊ぶ、演奏する、演じる、協力する...）」をテーマに身近な道具を改変した自作楽器を制作。音楽や楽器の名を借りたユーモアや遊びによる少し不思議なサウンドパフォーマンスを通して、日常や表現行為の中で「失敗」とされるもの（逸脱、ノイズ、障害...）の存在を肯定する。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_sugi.png" alt="木ミ"></div>
+            <div class="profile">
+              <h3>木ミ</h3>
+              <p>CLUB308 / 大垣ナンヤッターッケ の一員改め、DJ Without Abstruct による鬼のトラックパッドDJ</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list">
+        <h2>Visual</h2>
+        <ul>
+          <li>
+            <div class="thumb"><img src="./images/thumb_hori.png" alt="堀井哲史"></div>
+            <div class="profile">
+              <h3>堀井哲史</h3>
+              <p class="fsmall">ビジュアルアーティスト/プログラマ。ライゾマティクス所属。東京造形大学デザイン学科、国際情報科学芸術アカデミー［IAMAS］DSPコース卒。 既存のソフトウェアやツールに頼らない、コンピュータならではの動的な絵作りを着想からプログラミングまで一貫して行い、インタラクティヴ作品、映像制作を、エンターテインメント、アート等様々なフィールドで行っている。プログラミング/デザインを担当した『Perfume Global Site Project』は 第16回文化庁メディア芸術祭エンターテイメント部門大賞、カンヌ国際広告祭等多数受賞。また、2015年ミラノ万博日本館シーン5の展示テクニカルディレクションを担当するなど、形態にとらわれない制作活動している。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_motoi.png" alt="清水 基"></div>
+            <div class="profile">
+              <h3>清水 基</h3>
+              <p>IAMAS DSPコース卒業、School for Poetic Computation 第1期生。IT系企業数社に務めた後、2015年よりプロダクションチーム backspacetokyo を共同主催。コーディングカルチャーに根ざした表現に従事している。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_hoshi.png" alt="星 卓哉"></div>
+            <div class="profile">
+              <h3>星 卓哉</h3>
+              <p class="fsmall">蔵人／プログラマ。玉村本店所属。情報科学芸術大学院大学［IAMAS］修了。コンピュータを用いた表現の本質をプログラミングによる使役と捉え、リアルタイム、動的生成に重きを置いた表現を行う。近年は、クリエイティブ・コーディングにおける制作環境の標準化により引き起こされる表現のコモディティ化に対し、表現の本質を問い直し、常に逸脱した態度で臨むことを信条としてきた。現在は一念発起し杜氏を目指して修行中。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_noriko.png" alt="noriko matsumoto"></div>
+            <div class="profile">
+              <h3>noriko matsumoto</h3>
+              <p>1980年1月京都生まれ　舞台や広告などで、映像エンジニア/プログラマーとして活動。現在は育休がてらTokyo No1 Geek Momとして、キッチンプログラマー活動中</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_scott.png" alt="Scott Allen"></div>
+            <div class="profile">
+              <h3>Scott Allen</h3>
+              <p>像楽家，生像作家．2016年情報科学芸術大学院大学（IAMAS）修了．投影装置に着目し，現在固定化された映像の認識に対する逸脱を目的としたインスタレーションを制作する．また，投影装置の仕組みに物理的に介入し，変調を加えることで像を作るスタイルでパフォーマンス活動を行なう．</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_ayumu.png" alt="Ayumu Nagamatsu"></div>
+            <div class="profile">
+              <h3>Ayumu Nagamatsu</h3>
+              <p>リアルタイム生成のVJ/作品制作をおこなう。線や点のみのプリミティブな表現に注力。<br>
+                <a href="http://ayumu-nagamatsu.com" target="_blank">http://ayumu-nagamatsu.com</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_megane.png" alt="めがね&ボブ"></div>
+            <div class="profile">
+              <h3>めがね&amp;ボブ</h3>
+              <p>映像とプログラムを融合したVJをします。もう１年以上めがねはコンタクトをし、ボブはロングになっています。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_4545.png" alt="4545.jp"></div>
+            <div class="profile">
+              <h3>4545.jp</h3>
+              <p>大垣行こうムーンライトながら</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_eat.png" alt="eat"></div>
+            <div class="profile">
+              <h3>eat</h3>
+              <p>三重県生まれ。観客の位置情報をリアルタイムに映像に反映する参加型VJを試みている。雀が好き。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list">
+        <h2>Decoration</h2>
+        <ul>
+          <li>
+            <div class="thumb"><img src="./images/thumb_hrr.png" alt="hrr"></div>
+            <div class="profile">
+              <h3>hrr</h3>
+              <p>1964年長野県生まれ。NxPC.Lab主催。研究領域はコミュニケーションシステム、実世界インタフェース・インタラクション。Web構造解析、位置情報ベースの研究/作品などをはじめ、近年は音楽体験を拡張するためのシステムの研究を行う。多数のクラブイベントでの経験を生かし、NxPC.Lab名義でクラブイベントを開催することで音楽会場で展開可能な実践的な展開を行なっている。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_watakemi.png" alt="watakemi"></div>
+            <div class="profile">
+              <h3>watakemi</h3>
+              <p>1993年7月京都府生まれ、早稲田大学創造理工学部総合機械工学科卒業、情報科学芸術大学院大学[IAMAS]在学。京都千葉神戸アメリカ東京岐阜を転々としている走り出しVJ。iPod Touch数十台をVJのように制御するVJとデコの狭間を走る。走りたい。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_hamada.png" alt="hamadayaro"></div>
+            <div class="profile">
+              <h3>hamadayaro</h3>
+              <p>1993年東京都生まれ、日本大学理工学部建築学科卒業、情報科学芸術大学院大学(IAMAS)在学。LEDを利用した自由自在な空間演出 [ noraLED ] として活動を行う。今回のイベントでもnoraLED(500個くらい？)します。</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb"><img src="./images/thumb_ioto.png" alt="ioto/LUM"></div>
+            <div class="profile">
+              <h3>ioto/LUM</h3>
+              <p>情報科学芸術大学院大学(IAMAS)在学　東京での建築と写真の仕事を経て岐阜に流れ着いた結果、コオロギを食べながらフライスぐるぐる回して半田付けする日々を過ごしています。みなさんとズットモになりたい！</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section></section>
+  <section id="4" class="container box-system">
+    <div class="inner">
+      <h2>System</h2>
+      <div class="content">
+        <h3>Sense of Space<span>(kafuka/hrr)</span></h3>
+        <p>kafukaの演奏に含まれる高可聴域音IDに反応して
+          会場内に配置されたスピーカから音楽が流れることで、
+          新たな音響空間が作られます。</p>
+        <h3>NxPC.SenStick<span>(hrr/matilde)</span></h3>
+        <p>BLEセンサーデバイスSenStick をアーティスト、観客などへの装着と会場への設置により
+          モーションデータ、環境データを取得します。
+          これらのデータは、会場デコレーションの動きや映像へ反映されることで、臨場感へと還元されます。
+          これらの各種データは今後継続的に取得していく予定です。</p>
+        <h3>VR配信<span>(Gooco. / anostudio)</span></h3>
+        <p>全天球カメラRICOH R Development Kit を複数台用いたVR配信を行います。（協力：RICOH）</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <ul>
+    <li><a href="http://www.iamas.ac.jp/" target="_blank"><img src="./images/logo_iamas.png" alt="IAMAS"></a></li>
+    <li><a href="http://circus-tokyo.jp/" target="_blank"><img src="./images/logo_circustokyo.png" alt="CIRCUS TOKYO"></a></li>
+  </ul>
+</footer>
+</body>
+</html>

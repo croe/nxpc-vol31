@@ -1,0 +1,31 @@
+// Base
+//
+// 各要素のデフォルトのスタイルです。
+//
+// Styleguide base
+
+//Base
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+body {
+  font-family: 'Fjalla One', "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $color-base-gray;
+  color: $color-base-red;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+p {
+  color: $color-text-gray;
+}

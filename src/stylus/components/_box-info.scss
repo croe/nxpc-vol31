@@ -1,0 +1,29 @@
+.box-info {
+  .content {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 20px;
+    .sociallink {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      .sociallink__item {
+        display: inline-block;
+        margin: 0 12px;
+        img {
+          width: 44px;
+        }
+      }
+    }
+    h3 {
+      font-size: 1.5em;
+      margin: 45px 0 30px;
+    }
+    strong {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+    }
+  }
+}

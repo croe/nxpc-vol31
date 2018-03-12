@@ -1,0 +1,28 @@
+.box-system {
+  margin: 100px 0 50px;
+  .inner {
+    .content {
+      font-size: 1.1em;
+      line-height: 1.3em;
+      background-color: rgba(201, 78, 55, .7);
+      color: $color-base-white;
+      padding: 20px;
+      h3 {
+        font-size: 1.5em;
+        margin: 45px 0 30px;
+        span {
+          font-size: .8em;
+          margin: 0 0 0 10px;
+        }
+      }
+      p {
+        color: $color-base-white;
+      }
+      strong {
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+      }
+    }
+  }
+}

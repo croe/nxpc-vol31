@@ -1,0 +1,21 @@
+.box-timetable {
+  .inner {
+    .timetable {
+      width: 100%;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include min-screen($breakpoint-sm) {
+  .box-timetable {
+    .inner {
+      .timetable {
+        width: 100%;
+      }
+    }
+  }
+}
