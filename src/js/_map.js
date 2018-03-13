@@ -16,7 +16,7 @@ module.exports = function(){
       styles: [
         {
           "stylers": [
-            { "hue": "#8f8a55" },
+            { "hue": "#79abcc" },
             { "lightness": 10 },
             { "saturation": 60 }
           ]
